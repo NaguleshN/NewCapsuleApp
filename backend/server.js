@@ -10,7 +10,6 @@ import userRoutes from './routes/userRoutes.js';
 import capsuleRoutes from './routes/capsuleRoutes.js';
 import multer from 'multer';
 import fs from 'fs';
-import mongoose from 'mongoose';
 import Capsule from './models/capsuleModel.js';
 import User from './models/userModel.js';
 import cors from 'cors';

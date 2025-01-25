@@ -49,21 +49,7 @@ const DigitalTimeCapsuleForm = () => {
 
   
   useEffect(() => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const { latitude, longitude } = position.coords;
-          setPosition([latitude, longitude]);
-        },
-        (error) => {
-          console.error("Error getting location", error);
-        }
-      );
-    } else {
-      console.error("Geolocation is not supported by this browser.");
-    }
-
-    getUsers();
+      getUsers();
   }, []);
 
   const handleFileChange = (e) => {
